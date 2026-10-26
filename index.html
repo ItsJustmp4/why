@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на наш сайт Minecraft Server!</h1>
+    </header>
+    <nav>
+        <a onclick="scrollToSection('about')">О сервере</a>
+        <a onclick="scrollToSection('why')">Почему сервер еще не готов?</a>
+        <a onclick="scrollToSection('goals')">Наши цели</a>
+        <a onclick="scrollToSection('contact')">Контакты</a>
+    </nav>
+    <section id="about">
+        <h2>О нашем сервере</h2>
+        <p>Наш сервер Minecraft будет предлагать уникальные игровые режимы, красивые ландшафты и дружелюбное сообщество. Мы стремимся создать место, где каждый игрок может найти что-то интересное и увлекательное.</p>
+    </section>
+    <section id="why">
+        <h2>Почему сервер еще не готов?</h2>
+        <p>Сервер еще не готов, потому что мы еще не купили необходимые ресурсы и оборудование. Мы работаем над этим и надеемся, что в ближайшее время сможем запустить наш сервер. В это время мы продолжаем улучшать и развивать наш проект.</p>
+    </section>
+    <section id="goals">
+        <h2>Наши цели</h2>
+        <p>Наши цели включают создание уникального и дружелюбного сообщества, предоставление качественного игрового опыта и постоянное обновление сервера новыми функциями и контентом.</p>
+    </section>
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <p>Если у вас есть вопросы или предложения, не стесняйтесь связаться с нами. Вы можете найти нас по следующим контактам:</p>
+        <ul>
+            <li>Email: hexa.justmp4@gmail.com</li>
+        </ul>
+    </section>
+    <footer>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
